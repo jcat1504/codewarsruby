@@ -13,3 +13,10 @@ def friend(friends)
   friends.select{|name| name.length = 4}
 end 
 
+def friend(friends)
+  friends.select{|n| n if size == 4}
+end 
+
+def friend(friends)
+  friends.reject{|f| f.length != 4}
+end 
