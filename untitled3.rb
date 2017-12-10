@@ -11,3 +11,6 @@ def solution(str)
   str.split(' ').inject(' '){|s, b| b + s}
 end 
 
+def solution(str = nil)
+  str.reverse if ! str.nil?
+end
