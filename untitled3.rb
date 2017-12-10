@@ -5,3 +5,9 @@ def solution(str)
 end
 
 solution("world")
+
+#Other solutions
+def solution(str)
+  str.split(' ').inject(' '){|s, b| b + s}
+end 
+
