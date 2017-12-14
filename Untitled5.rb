@@ -3,3 +3,7 @@
 def disemvowel(str
   str.delete('aeioOu')
 end
+
+  def disemvowel(str)
+    str.delete('aeiouAEIOU')
+  end
