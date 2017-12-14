@@ -4,3 +4,9 @@ while str.include?("797")
   str.sub!("797", "77")
   str
 end
+
+  def seven_ate9(str)
+    2.times{str.gsub!('797', '77')}
+    str
+  end 
+  
