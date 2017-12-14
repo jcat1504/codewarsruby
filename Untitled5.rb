@@ -7,3 +7,9 @@ end
   def disemvowel(str)
     str.delete('aeiouAEIOU')
   end
+
+  def disemvowel(str)
+    vowels = 'aeoui'
+    str.delete(vowels + vowels.upcase)
+  end 
+  
