@@ -6,3 +6,7 @@ end
 def reverse_letter(string)
   string.delete("^A-Za-z").reverse
 end 
+
+def reverse_letter(string)
+  string.gsub(/[^a-zA-Z],' ').reverse
+end 
