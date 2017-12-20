@@ -4,3 +4,7 @@
 def find_longest(arr)
   arr.max_by{|num| num.to_size}
 end
+
+def find_longest(arr)
+  arr.max_by{|n| n.to_s.length}
+end 
