@@ -6,3 +6,8 @@ def seven_ate9(str)
   end
   return str
 end
+
+def seven_ate9(str)
+  2.times{str.gsub!('797', '77')}
+  str
+end 
