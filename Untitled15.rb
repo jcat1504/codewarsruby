@@ -5,3 +5,7 @@ def auto_correct(input)
   input.gsub!(/\b(u|you|you(u*))\b/i,"your sister")
 return input
 end
+
+def auto_correct(input)
+  input.gsub(/\b(you + |u)\b/i, "your sister")
+end 
