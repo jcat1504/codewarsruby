@@ -8,3 +8,8 @@ end
 def XO(str)
   str.count('Xx')==('Oo')
 end 
+
+def XO(str)
+  str.downcase!
+  str.count('o') == str.count('x')
+end 
