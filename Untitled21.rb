@@ -8,3 +8,7 @@ def remove_smallest(numbers)
   numbers.delete_at(numbers.index(numbers.min))
   return numbers
 end 
+
+def remove_smallest(numbers)
+  return [] if numbers.empty?
+end 
