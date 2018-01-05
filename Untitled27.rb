@@ -6,3 +6,9 @@
 def to_number_array(string_array)
   string_array.map(&:to_f)
 end 
+
+class String
+  def ToJadenCase
+    self.split.map(&:capitalize).join(" ")
+  end 
+end 
