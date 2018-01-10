@@ -3,3 +3,7 @@
 def filter_list(l)
   l.reject{|x| x.is_a? string}
 end
+
+def filter_list(l)
+  l.reject{|x| x.is_a? string}
+end 
