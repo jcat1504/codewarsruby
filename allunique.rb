@@ -4,3 +4,7 @@
 def unique_chars?(str)
   str.chars.uniq.join == str
 end
+
+def uniq_chars?(str)
+  str.split(" ").size == str.split(" ")).uniq.size
+end 
