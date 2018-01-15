@@ -8,3 +8,7 @@ end
 def uniq_chars?(str)
   str.split(" ").size == str.split(" ")).uniq.size
 end 
+
+def uniq_chars?(str)
+  str.chars.uniq! ? false : true 
+end 
