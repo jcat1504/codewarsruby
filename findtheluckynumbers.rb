@@ -7,3 +7,7 @@ end
 def filterlucky(lst)
   lst.select{|x| x.to_s.include?('7')}
 end 
+
+def filterlucky(lst)
+  lst.select{|l| l if l.to_s.split(" ").include? "7"}
+end 
