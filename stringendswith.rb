@@ -4,3 +4,11 @@
 def solution(str, ending)
   str.end_with?(ending)
 end
+
+def solution(str, ending)
+  if ending == str[str.length - ending.length]
+    true 
+  else 
+    false 
+  end 
+end 
