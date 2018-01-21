@@ -12,3 +12,6 @@ def solution(str, ending)
     false 
   end 
 end 
+
+def solution(str, ending)
+  str[-ending.size..-1] == ending
