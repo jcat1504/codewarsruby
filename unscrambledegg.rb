@@ -8,3 +8,7 @@ end
 def unscramble_eggs(word)
   word.gsub("egg", "")
 end 
+
+def unscramble_eggs(word)
+  return.word.split('egg').join(' ')
+end 
