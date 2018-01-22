@@ -4,3 +4,7 @@
 def unscramble_eggs(word)
   word.gsub(/egg/, " ")
 end 
+
+def unscramble_eggs(word)
+  word.gsub("egg", "")
+end 
