@@ -2,3 +2,7 @@
 def most_frequent_item_count(collection)
   collection.uniq.map{|n| collection.count(n)}.max.to_i
 end
+
+def most_frequent_item_count(collection)
+  collection.uniq.map{|v|collection.count v}.max || o
+end 
