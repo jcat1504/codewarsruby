@@ -4,3 +4,6 @@
 def solution(sentence)
   sentence.split.reverse.join(" ")
 end
+
+def solution(s)
+  s.split(" ").reverse.join(" ") end
