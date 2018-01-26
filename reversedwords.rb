@@ -7,3 +7,6 @@ end
 
 def solution(s)
   s.split(" ").reverse.join(" ") end
+
+def solution(sentence)
+  sentence.split(/\st).reverse.join(' '); end
