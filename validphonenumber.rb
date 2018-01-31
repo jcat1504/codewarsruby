@@ -6,3 +6,6 @@
 def valdPhoneNumber(phonenumber)
   !! phone number [/\A\(\d{3}\)\s\d{3}-\d{4}\z/] end
   
+def valdPhoneNumber(phoneNumber)
+  !!(phoneNumber =~ /^\ (\d{3}\) \d{3} - \d{4}$/) end 
+^^Not entirely my solution, by the way
