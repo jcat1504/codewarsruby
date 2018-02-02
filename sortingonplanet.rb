@@ -5,3 +5,5 @@
 def sort_twisted(arr)
   arr.sort_by{|x| x.to_s.tr('37', '73').to_i} end
   
+def sort_twisted(arr)
+  arr.sort_by{|n| n.to_s.tr("37", "73").to_i} end 
