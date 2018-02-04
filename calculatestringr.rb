@@ -11,3 +11,6 @@
 
 def shifted_shift(first, second)
   (0..second.size).each{|n| return n if first==second.chars.rotate(n).join} end
+
+def shifted_diff(first, second) 
+  first.length != second.length ? -1 : ((second + second).index(first) or -1)
