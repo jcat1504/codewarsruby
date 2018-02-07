@@ -11,3 +11,6 @@ def list_names
 
 def list_names
   names.map(&:values).join(' , ').gsub(/, (\w+)$/, "&\\1")end 
+
+def list_names 
+  names.map{|h|h[:name]}.join(" , ").reverse.gsub(/, /, "&").reverse end
