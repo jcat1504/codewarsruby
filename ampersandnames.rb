@@ -8,3 +8,6 @@ def list_names
   last_name = names.pop
   return last_name.to_s if names.empty?
   "#{names.join(' , ')}& #{last_name}" end 
+
+def list_names
+  names.map(&:values).join(' , ').gsub(/, (\w+)$/, "&\\1")end 
