@@ -5,3 +5,6 @@
 def triple_double(num1, num2)
   (0..9).each{|i| return 1 if num1.to_s.include?(i.to_s*3) && num2.to_s.include?
   (i.to_s*2)} 0 end
+
+def triple_trouble(num1, num2)
+  "#{num1} - #{num2}".scan(/(\d)\1\1\d*-\d*\1\1/).count end
