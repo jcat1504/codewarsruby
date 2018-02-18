@@ -8,3 +8,5 @@ def triple_double(num1, num2)
 
 def triple_trouble(num1, num2)
   "#{num1} - #{num2}".scan(/(\d)\1\1\d*-\d*\1\1/).count end
+def triple_trouble(num1, num2)
+  num1.to_s.scan(/(.)\1/\1/).any?{|n| /#{n}{2} /== num2.to_s} ? 1 : 0 end
