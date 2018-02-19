@@ -12,3 +12,10 @@ def longest_palindrome s
   end
   return max_palindrome_len
 end 
+
+def longest_palindrome s 
+  s.length.downto(1) do |n|
+    s.chars.each_cons(n) do |arr|
+      return n if arr == arr.reverse end end 
+  0
+end 
