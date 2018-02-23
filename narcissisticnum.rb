@@ -6,3 +6,6 @@ code must return true or false
 
 def narcissistic? (value)
   value == value.to_s.chars.map{|x| s.to_i ** value.to_s.size}.reduce(:+) end
+
+ def narcissistic? (value, size = value.to_s.size)
+   value.to_s.chars.collect{|n| n.to_i**size}.reduce(:+) == value end
