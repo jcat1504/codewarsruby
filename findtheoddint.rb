@@ -5,3 +5,11 @@ def find_it(seq)
 
 def find_it(seq)
   seq.reduce(:^) end 
+
+def find_it(seq)
+  seq.each do |i|
+    if seq.count(i) % 2 ! = 0 
+      return i 
+    end 
+  end 
+end 
