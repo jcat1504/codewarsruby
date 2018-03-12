@@ -5,3 +5,5 @@
 def high(x)
   x.split.max_by{|x| score_word(w)} end
   
+def high(str)
+  str.split.max_by{|w| w.chars.reduce(0){|sum, c| sum += p (c.ord-96)}}end 
