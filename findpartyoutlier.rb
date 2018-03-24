@@ -7,3 +7,6 @@ def find_outlier(integers)
 
 def find_outlier(integers)
   outlier = integers.first(3).count(&: even?)<2 ? :even ? :odd? integers.find(&outlier) end 
+
+def find_outlier(integers)
+  integers.count(&:even?) > 1 ? integers.find(&:odd?) : integers.find(&:even?) end 
