@@ -5,3 +5,6 @@
 
 def array_dif(a,b)
   a-b end 
+
+def array_diff(a, b)
+  a.reject{|e| b.include? e} end 
