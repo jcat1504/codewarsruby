@@ -8,3 +8,6 @@ def array_dif(a,b)
 
 def array_diff(a, b)
   a.reject{|e| b.include? e} end 
+
+def array_diff(a, b)
+  b.each{|b_item| a.delete(b_item)} a end
