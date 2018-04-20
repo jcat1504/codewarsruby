@@ -18,3 +18,6 @@ def get_score(n)
   # do your magic here
   (1..n).inject(:+) * 50
 end
+
+def get_score(n)
+ 25*n*(n+1) end
