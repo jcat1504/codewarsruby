@@ -7,3 +7,11 @@
 def count_bits(n)
   n.to_s(2).count "1"
 end
+
+def count_bits(n)
+  count = 0 
+  while n > 0 
+    count += n&1 
+    n= n >> 1 end 
+  count end 
+
