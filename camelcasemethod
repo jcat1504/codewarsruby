@@ -1,0 +1,4 @@
+Write simple .Camelcase method for strings. All words must have their first letter capitalized without spaces.
+class String 
+def camelCase
+self.split.map(&: capitalize).join end end 
