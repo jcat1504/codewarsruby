@@ -7,3 +7,9 @@ class String
     self.split.map(&:capitalize).join
   end
 end
+
+class String
+  def camelcase
+    gsub(/\w+, &:capitalize).delete(' ')
+  end 
+end
