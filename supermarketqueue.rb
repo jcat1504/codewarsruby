@@ -23,3 +23,11 @@ def queue_time(customers, till_count)
   customers.each { |service_time| tills[tills.index(tills.min)] += service_time }
   tills.max
 end
+
+
+def queue_time(customers, n)
+  #your code here
+ reg = Array.new(n,0)
+ customers.each {|cust| reg[reg.index(reg.min)] += cust }
+ return reg.max
+end
