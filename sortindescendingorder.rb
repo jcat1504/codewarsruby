@@ -11,3 +11,7 @@
 def sort_the_inner_content(words)
   words.split.each { |x| x[1..-2] = x[1..-2].chars.sort.reverse.join }.join(' ')
 end
+
+def descending_order(n)
+  n.to_s.split("").sort { |x,y| y <=> x }.join.to_i
+end
